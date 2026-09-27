@@ -1,2 +1,6 @@
+# Crawling is allowed on purpose. Search engines are kept out by the
+# X-Robots-Tag: noindex, nofollow header set in _headers and by the noindex
+# meta tag on the page. A crawler blocked here could never see either of
+# them, and Google will not de-index a URL it is not allowed to fetch.
 User-agent: *
-Disallow: /
+Allow: /
